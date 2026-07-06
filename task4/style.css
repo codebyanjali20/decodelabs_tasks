@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#74ebd5,#9face6);
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-box{
+    width:100%;
+    max-width:500px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-box h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.form-box p{
+    text-align:center;
+    margin-bottom:25px;
+    color:#444;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+}
+
+label{
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+input,
+select{
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus{
+    border-color:#4CAF50;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:15px 0;
+}
+
+.checkbox input{
+    width:18px;
+    height:18px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+button{
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+button[type="submit"]{
+    background:#4CAF50;
+    color:white;
+}
+
+button[type="submit"]:hover{
+    background:#3d9442;
+}
+
+button[type="reset"]{
+    background:#f44336;
+    color:white;
+}
+
+button[type="reset"]:hover{
+    background:#d32f2f;
+}
+
+.error{
+    color:red;
+    font-size:14px;
+    margin-top:5px;
+}
+
+#successMessage{
+    text-align:center;
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+}
+
+@media(max-width:600px){
+
+.form-box{
+    padding:25px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+button{
+    width:100%;
+    margin-bottom:10px;
+}
+
+}
